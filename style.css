@@ -141,6 +141,38 @@ take the max width and margin to auto to center
     align-items: center;
 }
 
+@media (max-width: 540px) {
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .back-img-container img{
+        display: none;
+    }
+    .decrease-size img{
+        width:100%;
+        /*height:250px;*/
+        margin-top: 20px;
+    }
+    .decrease-size iframe{
+        width:100%;
+        height:250px;
+        margin-top: 20px;
+    }
+    .tab-titles{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-inner-container ul{
+        padding: 0;
+    }
+    .section-title h1{
+        text-align: center;
+    }
+}
+
+
 .column {
     display: flex;
     flex-direction: column;
@@ -206,8 +238,13 @@ projects
     display: block;
     transition: transform 0.8s;
 }
+
 .more-project{
-    margin-top : 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.more-project Span{
+    color : #535151;
 }
 /*Contact me*/
 .layer{
