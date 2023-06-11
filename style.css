@@ -54,7 +54,8 @@ nav ul li a:hover {
     padding: 10px;
 }
 .detel a:hover{
-    background: #5a5858;
+    background: #bcb8b8;
+    color: #040404;
 }
 .detel {
     width: 70%;
@@ -72,14 +73,16 @@ span {
     line-height: 22px;
 }
 .detel a {
-    background: #212121;
     padding: 10px 18px;
     text-decoration: none;
     font-weight: bold;
-    color: #fbfbfb;
     display: inline-block;
     margin: 30px 0;
-    border-radius: 5px;
+    border-radius: 2px;
+}
+.resume-download{
+    background: #212121;
+    color: #fbfbfb;
 }
 .back-img-container {
     position: relative;
@@ -95,7 +98,6 @@ span {
 .back-img-container:hover .shape {
     bottom: 30px;
 }
-
 
 /*---------SECTION-GENERIC--------*/
 
@@ -123,7 +125,7 @@ take the max width and margin to auto to center
     transform : translateY(150px);
     opacity:0;
     transition: all 1s ease;
-    min-height: 40vh;
+    /*min-height: 20vh;*/
 }
 .section-container.active-section-container{
     transform: translateY(0px);
@@ -204,6 +206,9 @@ projects
     display: block;
     transition: transform 0.8s;
 }
+.more-project{
+    margin-top : 20px;
+}
 /*Contact me*/
 .layer{
     width:80%;
@@ -240,13 +245,31 @@ projects
 .work:hover img{
     transform: scale(1.05);
 }
+
+/*Contact me*/
 .contact-me-container{
     background-color: #3f0376;
     color: #fbfbfb;
-    border-radius: 5px;
+    /*max-height: 20vh;*/
 }
 .contact-me-container .section-description p{
-    color: #fbfbfb;
+    color: #e6e6e6;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.contact-me-info {
+    text-decoration: none;
+    color: inherit;
+    transition: font-size 0.4s ease; /* Add transition to color and font-size properties */
+}
+
+.contact-me-info:hover {
+    font-size: 16.5px;
+}
+/*footer*/
+footer{
+    margin-left: 20px;
+    background-color: #5a5858;
+    color: white;
 }
