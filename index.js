@@ -4,6 +4,20 @@
 //     }, 100);
 // };
 
+function downloadPDF(){
+    const pdfURL = 'files/akshatha-hebbar-resume.pdf';
+    const link = document.createElement('a');
+    link.href = pdfURL;
+    link.target = '_blank';
+    link.download = 'Akshatha Hebbar resume.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+const downloadResume = document.getElementById('resume');
+downloadResume.addEventListener('click',downloadPDF)
+
 function showProjectVideoModal(name, videoURL) {
     return (event) => {
         const modalElement = document.createElement('modal-dialog')
@@ -21,22 +35,22 @@ function showProjectVideoModal(name, videoURL) {
 
 const feedbackLoggerProjectContainer = document.getElementById('feedback-logger-project');
 feedbackLoggerProjectContainer.addEventListener('click',
-    showProjectVideoModal('Feedback logger', 'https://www.youtube.com/embed/OBGGXMwgSds')
+    showProjectVideoModal('Feedback logger', 'https://www.youtube.com/embed/1diltUKm9s8')
 )
 
 const workoutTrackerProjectContainer = document.getElementById('workout-tracker-project');
 workoutTrackerProjectContainer.addEventListener('click',
-    showProjectVideoModal('Workout Tracker', 'https://www.youtube.com/embed/OBGGXMwgSds')
+    showProjectVideoModal('Workout Tracker', 'https://www.youtube.com/embed/3NQR7v8vilg')
 )
 
 const digitalBookProjectContainer = document.getElementById('digital-book-project');
 digitalBookProjectContainer.addEventListener('click',
-    showProjectVideoModal('Buy Digital Book', 'https://www.youtube.com/embed/OBGGXMwgSds')
+    showProjectVideoModal('Buy Digital Book', 'https://www.youtube.com/embed/tgmpAsn14AE')
 )
 
 const repeatedBuyersProjectContainer = document.getElementById('repeated-buyers-project');
 repeatedBuyersProjectContainer.addEventListener('click',
-    showProjectVideoModal('Predict Repeated Buyers', 'https://www.youtube.com/embed/OBGGXMwgSds')
+    showProjectVideoModal('Predict Repeated Buyers', 'https://www.youtube.com/embed/RKJ5-4E2nJw')
 )
 
 
