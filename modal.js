@@ -90,7 +90,7 @@ class Modal extends HTMLElement {
                 min-height: 200px;
                 transform: translate(-50%,-50%);
                 border-radius: 2px;
-                min-width: 300px;
+                min-width: 600px;
                 flex-direction: column;
                 flex-wrap: nowrap;
                 align-content: flex-start;
@@ -120,6 +120,11 @@ class Modal extends HTMLElement {
               background-color: #6c757d;
               border-color: #6c757d;
             }
+            @media (max-width: 540px) {
+                .modal {
+                    min-width: 90%;
+                }
+            }
           </style>
           <div class='${wrapperClass}'>
             <div class='modal'>
@@ -127,7 +132,8 @@ class Modal extends HTMLElement {
               <div class='content'>
                 <slot></slot>
                 <iframe 
-                width="560"
+                class="youtube-video-container"
+                width="100%"
                  height="315"
                   src="${this.videoURL}"
                    title="YouTube video player" 
