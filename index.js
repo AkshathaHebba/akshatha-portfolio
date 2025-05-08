@@ -5,7 +5,7 @@
 // };
 
 function downloadPDF(){
-    const pdfURL = 'files/akshatha-hebbar-resume.pdf';
+    const pdfURL = '/Akshatha Hebbar - Software Engineer.pdf';
     const link = document.createElement('a');
     link.href = pdfURL;
     link.target = '_blank';
